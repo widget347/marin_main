@@ -1,4 +1,251 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="index,follow"><meta name="theme-color" content="#000000"><meta property="og:title" content="Widget"><meta property="og:url" content="https://e-z.bio/marin"><meta property="og:image" content="images/12vidhqkyj.jpg"><meta property="og:site_name" content="bio"><link rel="canonical" href="https://marin.best"><title></title><meta name="next-head-count" content="10"><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"><link rel="preload" href="css/76d05dbf18c85cda.css" as="style"><link rel="stylesheet" href="css/76d05dbf18c85cda.css" data-n-g=""><noscript data-n-css=""></noscript><script defer="" nomodule="" src="js/polyfills-c67a75d1b6f99dc8.js"></script><script src="js/webpack-8c72506f65e995a8.js" defer=""></script><script src="js/framework-2c79e2a64abdb08b.js" defer=""></script><script src="js/main-6fec0a276447d971.js" defer=""></script><script src="js/_app-bdcfe441542f62f0.js" defer=""></script><script src="js/818-83b7645a80b62570.js" defer=""></script><script src="js/749-571646987d7ceaa3.js" defer=""></script><script src="js/%5Busername%5D-e5662eaab27a2563.js" defer=""></script><script src="js/_buildManifest.js" defer=""></script><script src="js/_ssgManifest.js" defer=""></script><style id="__jsx-3192815315">*{cursor:url(https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/hsvd5koojr.cur)0 0,auto!important}::-moz-selection{background-color:#000000!important;color:#ffffff!important}::selection{background-color:#000000!important;color:#ffffff!important}</style></head><body><div id="__next"><div id="_rht_toaster" style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div><style>body {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="index,follow"><meta name="theme-color" content="#000000"><meta property="og:title" content="Widget"><meta property="og:url" content="https://e-z.bio/marin"><meta property="og:image" content="images/12vidhqkyj.jpg"><meta property="og:site_name" content="bio"><link rel="canonical" href="https://marin.best"><title>widget</title><meta name="next-head-count" content="10"><link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"><link rel="preload" href="css/76d05dbf18c85cda.css" as="style"><link rel="stylesheet" href="css/76d05dbf18c85cda.css" data-n-g=""><noscript data-n-css=""></noscript><script defer="" nomodule="" src="js/polyfills-c67a75d1b6f99dc8.js"></script><script src="js/webpack-8c72506f65e995a8.js" defer=""></script><script src="js/framework-2c79e2a64abdb08b.js" defer=""></script><script src="js/main-6fec0a276447d971.js" defer=""></script><script src="js/_app-bdcfe441542f62f0.js" defer=""></script><script src="js/818-83b7645a80b62570.js" defer=""></script><script src="js/749-571646987d7ceaa3.js" defer=""></script><script src="js/%5Busername%5D-e5662eaab27a2563.js" defer=""></script><script src="js/_buildManifest.js" defer=""></script><script src="js/_ssgManifest.js" defer=""></script>
+
+<!-- LIQUID GLASS v8 — no glint -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none">
+  <defs>
+    <filter id="lg-lens" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="0.25"/>
+    </filter>
+  </defs>
+</svg>
+
+<style>
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* lg-glass: static specular only — NO ::after sweep/glint */
+.lg-glass {
+  position: relative !important;
+  overflow: hidden !important;
+  transform: translateZ(0);
+}
+.lg-glass::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(128deg,
+    rgba(255,255,255,0.18) 0%,
+    rgba(255,255,255,0.06) 26%,
+    transparent 52%) !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.lg-glass > * { position: relative !important; z-index: 2; }
+
+/* lg-pill: social icons & buttons */
+.lg-pill {
+  position: relative !important;
+  overflow: hidden !important;
+  transform: translateZ(0);
+  transition: transform 0.18s cubic-bezier(0.34,1.56,0.64,1),
+              box-shadow 0.18s ease,
+              background 0.18s ease !important;
+}
+.lg-pill::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important; left: 0 !important; right: 0 !important;
+  height: 50% !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.18) 0%, transparent 100%) !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.lg-pill > * { position: relative !important; z-index: 2; }
+.lg-pill:hover  { transform: translateY(-2px) scale(1.05) translateZ(0) !important; }
+.lg-pill:active { transform: translateY(0) scale(0.96) translateZ(0) !important; }
+
+/* rhap overrides — nuke styled-jsx dark #101013 backgrounds */
+.rhap_download-progress,
+.rhap_progress-bar-show-download { background: rgba(255,255,255,0.13) !important; }
+.rhap_progress-bar    { background: rgba(255,255,255,0.16) !important; }
+.rhap_progress-filled { background: rgba(255,255,255,0.78) !important; }
+.rhap_progress-indicator {
+  background: #fff !important;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.3), 0 2px 8px rgba(0,0,0,0.4) !important;
+}
+.rhap_volume-bar     { background: rgba(255,255,255,0.16) !important; }
+.rhap_volume-filled  { background: rgba(255,255,255,0.72) !important; }
+.rhap_volume-indicator { background: #fff !important; }
+.rhap_main-controls-button,
+.rhap_repeat-button,
+.rhap_volume-button  { color: rgba(255,255,255,0.92) !important; }
+.rhap_time, .rhap_header { color: #fff !important; }
+</style>
+
+<script>
+(function(){
+'use strict';
+
+var BF  = 'blur(10px) saturate(155%) brightness(1.09)';
+var BG  = 'rgba(255,255,255,0.07)';
+var SH  =
+  'inset 0 1.5px 0 rgba(255,255,255,0.44),' +
+  'inset 0 -1px 0 rgba(255,255,255,0.05),' +
+  'inset 1px 0 0 rgba(255,255,255,0.10),' +
+  'inset -1px 0 0 rgba(255,255,255,0.04),' +
+  '0 18px 48px rgba(0,0,0,0.52),' +
+  '0 5px 16px rgba(0,0,0,0.26)';
+
+var PILL_BF = 'blur(8px) saturate(150%)';
+var PILL_BG = 'rgba(255,255,255,0.09)';
+var PILL_SH =
+  'inset 0 1px 0 rgba(255,255,255,0.46),' +
+  'inset 0 -0.5px 0 rgba(255,255,255,0.05),' +
+  'inset 0 0 0 1px rgba(255,255,255,0.13),' +
+  '0 4px 14px rgba(0,0,0,0.30)';
+
+var DONE = 'lg-done';
+
+function si(el,p,v){ el.style.setProperty(p,v,'important'); }
+
+function clearBorders(el){
+  ['border','border-top','border-right','border-bottom','border-left',
+   'border-width','border-top-width','border-right-width',
+   'border-bottom-width','border-left-width',
+   'border-color','border-top-color','border-right-color',
+   'border-bottom-color','border-left-color',
+   'border-style','outline','outline-width','outline-color'].forEach(function(p){
+    si(el, p,
+      p.endsWith('-color')                         ? 'transparent' :
+      p==='border-style'||p.startsWith('outline')  ? 'none' : '0px');
+  });
+}
+
+function makeCard(el){
+  clearBorders(el);
+  si(el,'background',BG);
+  si(el,'background-color','transparent');
+  si(el,'backdrop-filter',BF);
+  si(el,'-webkit-backdrop-filter',BF);
+  si(el,'box-shadow',SH);
+  si(el,'position','relative');
+  si(el,'overflow','hidden');
+  el.classList.add('lg-glass',DONE);
+}
+
+function makePill(el){
+  clearBorders(el);
+  si(el,'background',PILL_BG);
+  si(el,'background-color','transparent');
+  si(el,'backdrop-filter',PILL_BF);
+  si(el,'-webkit-backdrop-filter',PILL_BF);
+  si(el,'box-shadow',PILL_SH);
+  si(el,'position','relative');
+  si(el,'overflow','hidden');
+  el.classList.add('lg-pill',DONE);
+}
+
+function sweep(){
+  document.querySelectorAll('*:not(.'+DONE+')').forEach(function(el){
+    var tag = el.tagName;
+    if(!tag||'SCRIPT STYLE SVG ASIDE HTML BODY AUDIO HEAD META LINK NOSCRIPT'.split(' ').includes(tag)){
+      el.classList.add(DONE); return;
+    }
+
+    var cn = typeof el.className==='string' ? el.className : '';
+    var cs = el.style;
+
+    // Hide icon tooltips
+    if(cn.includes('group-hover:scale-100')||cn.includes('group-hover\:scale-100')){
+      si(el,'display','none');
+      el.classList.add(DONE); return;
+    }
+
+    // Skip absolutely-positioned / hidden overlays
+    if(cn.includes('scale-0')||cn.includes('absolute')||cn.includes('fixed')){
+      el.classList.add(DONE); return;
+    }
+
+    // Profile image ring
+    if(tag==='IMG'){
+      if(cn.includes('rounded')||cs.borderRadius){
+        clearBorders(el);
+        si(el,'box-shadow',
+          '0 0 0 2.5px rgba(255,255,255,0.55),' +
+          '0 0 0 5px rgba(255,255,255,0.12),' +
+          '0 14px 38px rgba(0,0,0,0.60)');
+      }
+      el.classList.add(DONE); return;
+    }
+
+    // rhap_container — strip it; parent div.p-3 wrapper is the glass surface
+    if(cn.includes('rhap_container')){
+      clearBorders(el);
+      si(el,'background','transparent');
+      si(el,'background-color','transparent');
+      si(el,'backdrop-filter','none');
+      si(el,'-webkit-backdrop-filter','none');
+      si(el,'box-shadow','none');
+      si(el,'margin-top','0');
+      si(el,'padding','8px 12px');
+      el.classList.add(DONE); return;
+    }
+
+    // rhap children — clear dark backgrounds
+    if(cn.includes('rhap_')&&!cn.includes('rhap_container')){
+      if(!cn.includes('rhap_progress-filled')&&
+         !cn.includes('rhap_progress-indicator')&&
+         !cn.includes('rhap_volume-indicator')&&
+         !cn.includes('rhap_volume-filled')){
+        si(el,'background-color','transparent');
+        si(el,'background','transparent');
+      }
+      el.classList.add(DONE); return;
+    }
+
+    var bw = cs.borderWidth  || '';
+    var br = cs.borderRadius || '';
+    var bg = cs.backgroundColor || '';
+    var bf = cs.backdropFilter || cs.webkitBackdropFilter || '';
+
+    var hasBW  = parseFloat(bw) > 0;
+    var hasBR  = br!==''&&parseFloat(br)>0;
+    var isPill = br.includes('9999');
+    var hasBG  = bg&&bg!=='transparent'&&!bg.match(/rgba?\(\s*0,\s*0,\s*0,\s*0\s*\)/);
+    var hasBF  = bf.includes('blur');
+
+    // main-box: border from CSS class not inline
+    if(cn.includes('main-box')){ makeCard(el); return; }
+
+    // Social pills
+    if(isPill&&(tag==='A'||tag==='BUTTON')){ makePill(el); return; }
+
+    // Rectangular buttons/links
+    if(!isPill&&(tag==='A'||tag==='BUTTON')&&(hasBW||hasBG)&&hasBR){ makePill(el); return; }
+
+    // Cards: border + radius
+    if(hasBW&&hasBR&&!isPill){ makeCard(el); return; }
+
+    // Cards: backdrop-filter + radius (profile outer wrapper)
+    if(hasBF&&hasBR){ makeCard(el); return; }
+
+    // Cards: background + radius
+    if(hasBG&&hasBR&&!isPill){ makeCard(el); return; }
+
+    el.classList.add(DONE);
+  });
+
+  // Nuke styled-jsx dark rhap backgrounds
+  ['.rhap_download-progress','.rhap_progress-bar-show-download','.rhap_volume-bar'].forEach(function(s){
+    document.querySelectorAll(s).forEach(function(e){
+      si(e,'background','rgba(255,255,255,0.13)');
+      si(e,'background-color','rgba(255,255,255,0.13)');
+    });
+  });
+}
+
+[0,80,220,550,1100,2200,4500].forEach(function(ms){setTimeout(sweep,ms);});
+new MutationObserver(function(m){
+  if(m.some(function(r){return r.addedNodes.length;}))
+    requestAnimationFrame(sweep);
+}).observe(document.documentElement,{childList:true,subtree:true});
+
+}());
+</script>
+<style id="__jsx-3192815315">*{cursor:url(https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/hsvd5koojr.cur)0 0,auto!important}::-moz-selection{background-color:#000000!important;color:#ffffff!important}::selection{background-color:#000000!important;color:#ffffff!important}</style></head><body><div id="__next"><div id="_rht_toaster" style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div><style>body {
                         font-family: Poppins, sans-serif;
                         font-optical-sizing: auto;
-                    }</style><aside style="background-color:#000000;filter:blur(12px) brightness(100%);-webkit-filter:blur(12px) brightness(100%)" class="blur-md fixed w-screen h-screen z-[-5] duration-500"><img draggable="false" src="images/0bcfjluq93.png" class="object-cover h-full w-full"></aside><main style="background-color:#000000cc" class="flex flex-col justify-center w-screen h-screen cursor-pointer duration-500"><h1 style="color:#ffffff" class="flex flex-col px-4 break-words text-center font-semibold text-3xl">Click Anywhere</h1><div class="hidden"><div><div class="flex flex-col gap-3"></div></div></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"bio":{"cursor":{"enabled":false,"type":"Sparkle","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/hsvd5koojr.cur","center":false},"sparkles":{"enabled":false,"type":"White"},"background":{"type":"image","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/0bcfjluq93.png"},"banner":{"enabled":false,"type":"","url":""},"pfp":{"discord":false,"url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/12vidhqkyj.jpg","decorated":false,"decoration":"Anime Angry"},"ranks":[],"_id":"373352f2-7cc3-4ad8-b3a7-aada713aef51","uid":20310,"views":95,"name":"Widget","animatedTitle":false,"presence":false,"moneyBadge":false,"featured":false,"autoplayfix":true,"openByDefault":false,"showCustomLink":true,"backgroundBlur":0,"backgroundBrightness":100,"inviteCode":"https://discord.gg/qUZncTCfyr","badgeLayout":"center","alias":"","countViews":true,"url":"marin","description":"","title":"Marin Kitagawa","color":"#000000","primarycolor":"#000000","secondarycolor":"#101013","accentcolor":"#ffffff","textcolor":"#ffffff","useThemeColor":true,"showViews":true,"showBadges":true,"borderWidth":2,"borderRadius":0.4,"typeOnce":false,"message":"Click Anywhere","backgroundcolor":"#000000","iconcolor":"#ffffff","font":"Poppins","fullRoundedSocials":true,"useBackgroundAudio":false,"animated":false,"tilt":false,"typewriter":false,"opacity":0.2,"blur":2,"glow":false,"layout":1,"layoutOrder":["customLinks","discordPresence","discordInvite","musicPlayer","mediaEmbeds"],"socials":[{"_id":"68d24abcec907277c89db19c","name":"YouTube","url":"https://youtube.com/@widget347u"},{"_id":"68d24abcec907277c89db19d","name":"Github","url":"https://github.com/widget347"},{"_id":"68d24abcec907277c89db19e","name":"NameMC","url":"https://namemc.com/ilovemarin"},{"_id":"68d24abcec907277c89db19f","name":"Litecoin","url":"LPzJxPXKDrDYNCjCCrSgjAUPtQ7ZMmGnon"},{"_id":"68d24abcec907277c89db1a0","name":"Discord","url":"https://discord.com/users/1354097578983297064"}],"customLinks":[],"songs":[{"_id":"68d24abcec907277c89db1a1","name":"41, Kyle Richh, Jenn Carter - London (Fan Requested Audio).mp3","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/v78zxdcpj3.mp3"},{"_id":"68d24abcec907277c89db1a2","name":"overseas - Ken Carson.mp3","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/l1kn2ngqn6.mp3"}],"embeds":[],"__v":0},"musicIndex":1},"__N_SSP":true},"page":"/[username]","query":{"username":"marin"},"buildId":"whayFYBTE6nCVEyPrWCjL","isFallback":false,"gssp":true,"scriptLoader":[]}</script></body></html>
+                    }</style><aside style="background-color:#000000;filter:blur(12px) brightness(100%);-webkit-filter:blur(12px) brightness(100%)" class="blur-md fixed w-screen h-screen z-[-5] duration-500"><img draggable="false" src="images/0bcfjluq93.png" class="object-cover h-full w-full"></aside><main style="background-color:#000000cc" class="flex flex-col justify-center w-screen h-screen cursor-pointer duration-500"><h1 style="color:#ffffff" class="flex flex-col px-4 break-words text-center font-semibold text-3xl">Click Anywhere</h1><div class="hidden"><div><div class="flex flex-col gap-3"></div></div></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"bio":{"cursor":{"enabled":false,"type":"Sparkle","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/hsvd5koojr.cur","center":false},"sparkles":{"enabled":false,"type":"White"},"background":{"type":"image","url":"https://r2-bios.e-z.host/373352f2-7cc3-4ad8-b3a7-aada713aef51/0bcfjluq93.png"},"banner":{"enabled":false,"type":"","url":""},"pfp":{"discord":false,"url":"https://i.imgur.com/Qp9tW9s.jpeg","decorated":false,"decoration":"Anime Angry"},"ranks":[],"_id":"373352f2-7cc3-4ad8-b3a7-aada713aef51","uid":20310,"views":95,"name":"Widget","animatedTitle":false,"presence":false,"moneyBadge":false,"featured":false,"autoplayfix":true,"openByDefault":false,"showCustomLink":true,"backgroundBlur":0,"backgroundBrightness":100,"inviteCode":"https://discord.gg/qUZncTCfyr","badgeLayout":"center","alias":"","countViews":true,"url":"marin","description":"","title":"widget","color":"#000000","primarycolor":"#000000","secondarycolor":"#101013","accentcolor":"#ffffff","textcolor":"#ffffff","useThemeColor":true,"showViews":true,"showBadges":true,"borderWidth":2,"borderRadius":0.4,"typeOnce":false,"message":"Click Anywhere","backgroundcolor":"#000000","iconcolor":"#ffffff","font":"Poppins","fullRoundedSocials":true,"useBackgroundAudio":false,"animated":false,"tilt":false,"typewriter":false,"opacity":0.2,"blur":2,"glow":false,"layout":1,"layoutOrder":["customLinks","discordPresence","discordInvite","musicPlayer","mediaEmbeds"],"socials":[{"_id":"68d24abcec907277c89db19c","name":"YouTube","url":"https://youtube.com/@widget347u"},{"_id":"68d24abcec907277c89db19d","name":"Github","url":"https://github.com/widget347"},{"_id":"68d24abcec907277c89db19e","name":"NameMC","url":"https://namemc.com/ilovemarin"},{"_id":"68d24abcec907277c89db19f","name":"Litecoin","url":"LPzJxPXKDrDYNCjCCrSgjAUPtQ7ZMmGnon"},{"_id":"68d24abcec907277c89db1a0","name":"Discord","url":"https://discord.com/users/1354097578983297064"}],"customLinks":[],"songs":[{"_id":"68d24abcec907277c89db1a1","name":"Slow Jamz","url":"https://github.com/widget347/marin_main/raw/refs/heads/main/slow%20jamz%20no%20intro.mp3"}],"embeds":[],"__v":0},"musicIndex":0},"__N_SSP":true},"page":"/[username]","query":{"username":"marin"},"buildId":"whayFYBTE6nCVEyPrWCjL","isFallback":false,"gssp":true,"scriptLoader":[]}</script></body></html>
